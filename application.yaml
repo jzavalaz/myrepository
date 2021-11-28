@@ -1,0 +1,9 @@
+name: application
+app:
+  services:
+    customer: http://localhost:8081/
+    product: http://localhost:8080/
+  product:
+    resource:
+      by-customer: classpath:byCustomer.dat
+      data: classpath:data.dat
